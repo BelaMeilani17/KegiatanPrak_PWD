@@ -1,0 +1,54 @@
+<html><!-- tag untuk membuat sebuah dokumen HTML -->
+    <head> <!-- //tag untuk membuat informasi tentang dokumen -->
+        <title>GuestBook</title> <!-- //tag untuk membuat judul dari sebuah halaman yang diberi nama GuestBook -->
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> <!--tag untuk mendefinisikan charset untuk HTML5, dalam hal ini jenis konten menentukan pengkodean karakter untuk dokumen situs bahasa Inggris -->
+    </head>
+    <body>  <!-- tag untuk membuat tubuh dari sebuah halaman website -->
+        <div align="center"> <!-- tag untuk membuat sebuah bagian dalam dokumen dengan posisi ditengah -->
+            <strong>  <!-- tag untuk menunjukkan teks yang menyatakan begitu penting/dimaksudkan agar user segera melihat dan fokus pada teks yang dituju -->
+                <font size="6" face="Courier New, Courier, mono">BUKU TAMU</font> <!--tag untuk mengatur font -->
+            </strong>
+        </div>
+        <form name="form1" method="post" action="proses.php"> <!-- tag untuk membuat sebuah form HTML untuk input pengguna, dimana penginputan form tersebut akan masuk di file proses.php -->
+            <table width="58%" border="0" align="center">
+                <tr> <!-- tag untuk pembuatan baris pada tabel -->
+                    <td>Nama Lengkap</td>  <!-- tag untuk membuat sel dalam sebuah tabel yang berisi Nama Lengkap -->
+                    <td><input name="nama" type="text" id="nama"></td>
+                </tr> <!-- tag penutup untuk pembuatan baris pada tabel -->
+                <tr>
+                    <td>Alamat</td> <!-- tag untuk membuat sel dalam sebuah tabel yang berisi Alamat -->
+                    <td><input name="alamat" type="text" id="alamat"></td>
+                </tr>
+                <tr>
+                    <td>E-mail</td> <!-- tag untuk membuat sel dalam sebuah tabel yang berisi Email -->
+                    <td><input name="email" type="text" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Status</td>  <!-- tag untuk membuat sel dalam sebuah tabel yang berisi Status -->
+                    <td>
+                        <select name="status" id="status"> <!-- tag untuk membuat sebuah daftar drop-down -->
+                            <!--tag option untuk membuat pilihan dalam daftar drop-down -->
+                            <option>Menikah</option> 
+                            <option>Single</option>
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Komentar</td> <!--tag untuk membuat sel dalam sebuah tabel yang berisi Komentar  -->
+
+                    <!--textarea untuk membuat sebuah kontrol input multibaris yang akan digunakan pada komentar -->
+                    <td><textarea name="komentar" id="komentar"></textarea></td>
+                </tr>
+                <tr>
+                    <td>&nbsp</td> <!--&nbsp digunakan untuk menyisipkan spasi pada sel dalam sebuah tabel -->
+                    <td>
+                        <input type="submit" name="Submit" value="Kirim"> <!-- tag untuk membuat sebuah kontrol input yaitu Kirim -->
+                        <input type="reset" name="Submit2" value="Batal"> <!-- tag untuk membuat sebuah kontrol input yaitu Batal -->
+                    </td>
+                </tr>  
+            </table> <!--tag penutup pembuatan tabel -->
+        </form>
+        <div align="center"><strong><a href="lihat.php">::Lihat Buku Tamu::</a></strong></div> 
+        <!-- <a> adalah tag untuk membuat hyperlink yang akan dituju -->
+    </body>
+</html> <!--tag penutup sebuah dokumen HTML -->
